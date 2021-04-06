@@ -1,5 +1,3 @@
-const { mixedTypeAnnotation } = require("@babel/types");
-
 var initialPosition= [[658,265],[720,265],[782,265],
 [844,265],[906,265],[970,283],[1009,332],
 [1013,394],[979,446],[922,470],[860,470],
@@ -512,10 +510,7 @@ function myMove() {
     }
    
   });
-  console.log(upperFiveElements);
-  console.log(downFiveElement);
-  console.log(leftFiveElement);
-  console.log(rightFiveElement);
+
 }
 // Reset Button
 function reset()
@@ -558,4 +553,54 @@ function tButton()
 function mix()
 {
 
+}
+
+function swap13()
+{
+  var upperFiveElements=getUpperPossition();
+  //We need to work with 2 positions only so we will focus on last only position 1 and position 3
+  //Get elements starting from index 1
+  elem1= document.getElementById("main-object-"+(upperFiveElements[1]+1).toString());
+  elem3= document.getElementById("main-object-"+(upperFiveElements[3]+1).toString());
+
+
+  elem1.style.left= initialPosition[2][0]+'px';
+  elem1.style.top = initialPosition[2][1]+'px';
+  changedPosition[upperFiveElements[1]][0]= initialPosition[2][0];
+  changedPosition[upperFiveElements[1]][1]= initialPosition[2][1];
+
+  elem3.style.left= initialPosition[0][0]+'px';
+  elem3.style.top = initialPosition[0][1]+'px';
+  changedPosition[upperFiveElements[3]][0]= initialPosition[0][0];
+  changedPosition[upperFiveElements[3]][1]= initialPosition[0][1];
+
+}
+
+function swap174()
+{
+  var upperFiveElements=getUpperPossition();
+  var rightFiveElement=getRightPositions();
+  // We get total 10 positions but we need to work with position at 1, 4 and 7
+  elem1= document.getElementById("main-object-"+(upperFiveElements[1]+1).toString());
+  elem4= document.getElementById("main-object-"+(upperFiveElements[4]+1).toString());
+  elem7= document.getElementById("main-object-"+(rightFiveElement[2]+1).toString());
+
+
+  elem1.style.left= initialPosition[6][0]+'px';
+  elem1.style.top = initialPosition[6][1]+'px';
+  changedPosition[upperFiveElements[1]][0]= initialPosition[6][0];
+  changedPosition[upperFiveElements[1]][1]= initialPosition[6][1];
+
+  elem4.style.left= initialPosition[0][0]+'px';
+  elem4.style.top = initialPosition[0][1]+'px';
+  changedPosition[upperFiveElements[4]][0]= initialPosition[0][0];
+  changedPosition[upperFiveElements[4]][1]= initialPosition[0][1];
+
+  elem7.style.left= initialPosition[3][0]+'px';
+  elem7.style.top = initialPosition[3][1]+'px';
+  changedPosition[rightFiveElement[2]][0]= initialPosition[3][0];
+  changedPosition[rightFiveElement[2]][1]= initialPosition[3][1];
+
+
+  
 }

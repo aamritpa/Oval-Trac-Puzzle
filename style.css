@@ -236,9 +236,13 @@
 .element{
   text-align: center;
 }
+button{
+  background-color:#4CAF50;;
+}
+
+button:hover{background-color:orange;}
 
 .rotation {
-  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 15px 30px;
@@ -249,12 +253,29 @@
   margin: 4px 2px;
   cursor: pointer;
   top: 600px;
-  left: 596px;
+  left: 550px;
+  position: relative;
+}
+
+
+.rotation-inverse
+{
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 600px;
+  left: 550px;
   position: relative;
 }
 
 .reset {
-  background-color: #4CAF50;
+
   border: none;
   color: white;
   padding: 15px 30px;
@@ -265,12 +286,12 @@
   margin: 4px 2px;
   cursor: pointer;
   top: 600px;
-  left: 610px;
+  left: 550px;
   position: relative;
 }
 
 .t-button {
-  background-color: #4CAF50;
+
   border: none;
   color: white;
   padding: 15px 30px;
@@ -281,12 +302,12 @@
   margin: 4px 2px;
   cursor: pointer;
   top: 600px;
-  left: 624px;
+  left: 550px;
   position: relative;
 }
 
 .mix {
-  background-color: #4CAF50;
+
   border: none;
   color: white;
   padding: 15px 30px;
@@ -297,12 +318,12 @@
   margin: 4px 2px;
   cursor: pointer;
   top: 655px;
-  left: 216px;
+  left: 100px;
   position: relative;
 }
 
 .one-three {
-  background-color: #4CAF50;
+  
   border: none;
   color: white;
   padding: 15px 30px;
@@ -313,12 +334,12 @@
   margin: 4px 2px;
   cursor: pointer;
   top: 655px;
-  left: 223px;
+  left: 100px;
   position: relative;
 }
 
-.one-four-seven {
-  background-color: #4CAF50;
+.one-seven-four {
+  
   border: none;
   color: white;
   padding: 15px 30px;
@@ -329,13 +350,13 @@
   margin: 4px 2px;
   cursor: pointer;
   top: 655px;
-  left: 233px;
+  left: 100px;
   position: relative;
 }
 
 
 .help{
-  background-color: #4CAF50;
+  
   border: none;
   color: white;
   padding: 15px 30px;
@@ -346,12 +367,12 @@
   margin: 4px 2px;
   cursor: pointer;
   top: 655px;
-  left: 243px;
+  left: 100px;
   position: relative;
 }
 
 .solve{
-  background-color: #4CAF50;
+  
   border: none;
   color: white;
   padding: 15px 30px;
@@ -362,12 +383,12 @@
   margin: 4px 2px;
   cursor: pointer;
   top: 710px;
-  left: -80px;
+  left: -200px;
   position: relative;
 }
 
 .auto-solve{
-  background-color: #4CAF50;
+  
   border: none;
   color: white;
   padding: 15px 30px;
@@ -378,6 +399,6 @@
   margin: 4px 2px;
   cursor: pointer;
   top: 710px;
-  left: -75px;
+  left: -200px;
   position: relative;
 }
