@@ -233,6 +233,59 @@
   
 }
 
+.t_up
+{
+  top: 328px;
+  left: 655px;
+  position: absolute;
+  z-index: 2;
+  visibility: visible;
+
+}
+
+.t_down
+{
+  top: 150px;
+  left: 660px;
+  position: absolute;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.image-non-T-first{
+  top: 150px;
+  left: 660px;
+  position: absolute;
+  z-index: 2;
+  visibility: visible;
+
+}
+
+.image-non-T-second
+{
+  top: 328px;
+  left: 655px;
+  position: absolute;
+  z-index: 2;
+  visibility: hidden;
+}
+
+
+.image-rotate
+{
+  top: 339px;
+  left: 908px;
+  position: absolute;
+  z-index: 2;
+}
+.image-rotate-inverse{
+  top: 339px;
+  left: 570px;
+  position: absolute;
+  z-index: 2;
+
+}
+
 .element{
   text-align: center;
 }
@@ -242,7 +295,7 @@ button{
 
 button:hover{background-color:orange;}
 
-.rotation {
+#rotation {
   border: none;
   color: white;
   padding: 15px 30px;
@@ -258,7 +311,7 @@ button:hover{background-color:orange;}
 }
 
 
-.rotation-inverse
+#rotation-inverse
 {
   border: none;
   color: white;
@@ -274,7 +327,7 @@ button:hover{background-color:orange;}
   position: relative;
 }
 
-.reset {
+#reset {
 
   border: none;
   color: white;
@@ -290,7 +343,7 @@ button:hover{background-color:orange;}
   position: relative;
 }
 
-.t-button {
+#t-button {
 
   border: none;
   color: white;
@@ -306,7 +359,7 @@ button:hover{background-color:orange;}
   position: relative;
 }
 
-.mix {
+#mix {
 
   border: none;
   color: white;
@@ -322,7 +375,7 @@ button:hover{background-color:orange;}
   position: relative;
 }
 
-.one-three {
+#one-three {
   
   border: none;
   color: white;
@@ -338,7 +391,7 @@ button:hover{background-color:orange;}
   position: relative;
 }
 
-.one-seven-four {
+#one-seven-four {
   
   border: none;
   color: white;
@@ -355,7 +408,7 @@ button:hover{background-color:orange;}
 }
 
 
-.help{
+#help{
   
   border: none;
   color: white;
@@ -371,7 +424,7 @@ button:hover{background-color:orange;}
   position: relative;
 }
 
-.solve{
+#solve{
   
   border: none;
   color: white;
@@ -387,7 +440,7 @@ button:hover{background-color:orange;}
   position: relative;
 }
 
-.auto-solve{
+#auto-solve{
   
   border: none;
   color: white;

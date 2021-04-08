@@ -18,17 +18,16 @@
     </div>
 
     <div class="buttons">
-        <button type="button" class="rotation" onclick="myMove()">R-Rotation</button>
-        <button type="button" class="rotation-inverse" onclick= "rotationInverse()">R'-Rotation</button>
-        <button type="button" class="t-button" onclick= "tButton()">T-Button</button>
-        <button type="button" class="reset" onclick= "reset()">Reset</button>
-        <button type="button" class="mix" onclick= "mix()">Mix</button>
-        <button type="button" class="one-three" onclick= "swap13()">1 3</button>
-        <button type="button" class="one-seven-four" onclick= "swap174()">1 7 4</button>
-        <button type="button" class="help" onclick= "help()">Help</button>
-
-        <button type="button" class="solve" onclick= "solve()">Solve</button>
-        <button type="button" class="auto-solve" onclick= "autoSolve()">Auto-Solve</button>
+        <button type="button" id="rotation" onclick="rotate()">R-Rotation</button>
+        <button type="button" id="rotation-inverse" onclick= "rotationInverse()">R'-Rotation</button>
+        <button type="button" id="t-button" onclick= "tButton()">T-Button</button>
+        <button type="button" id="reset" onclick= "reset()">Reset</button>
+        <button type="button" id="mix" onclick= "mix()">Mix</button>
+        <button type="button" id="one-three" onclick= "swap13()">1 3</button>
+        <button type="button" id="one-seven-four" onclick= "swap174()">1 7 4</button>
+        <button type="button" id="help" onclick= "help()">Help</button>
+        <button type="button" id="solve" onclick= "solve()">Solve</button>
+        <button type="button" id="auto-solve" onclick= "autoSolve()">Auto-Solve</button>
 
     </div>
 
@@ -112,6 +111,30 @@
         <h2 class="element">20</h2>
     </div>
 
+    <div class="t_up" >
+        <img  id="image-T-up" src="t_up.png" style="width:253px;height:95;" onclick= "tButton()">
+    </div>
+
+    <div class="image-non-T-first" >
+        <img id="image-non-T-first" src="non_T_first.png" style="width:253px;height:95px;" onclick= "tButton()">
+    </div>
+
+    <div class="t_down" >
+        <img  id="image-T-down" src="t_down.png" style="width:253px;height:95;" onclick= "tButton()">
+    </div>
+
+    <div class="image-non-T-second" >
+        <img id="image-non-T-second" src="non_T_second.png" style="width:253px;height:95px;" onclick= "tButton()">
+    </div>
+
+    <div class="image-rotate" >
+        <img id="image-rotate" src="rotation.png" style="width:90px;height:111px;" onclick= "rotate()">
+    </div>
+
+    <div class="image-rotate-inverse" >
+        <img id="image-rotate-inverse" src="rotation_inverse.png" style="width:98px;height:111px;" onclick= "rotationInverse()">
+    </div>
+    
 </div>
 
     

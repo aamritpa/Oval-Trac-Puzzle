@@ -202,10 +202,14 @@ function getLeftPositions()
 }
 
 
-function myMove() {
+function rotate() {
   
   var circles = document.querySelectorAll(".circle");
- 
+  
+  document.getElementById("rotation").disabled = true;
+  document.getElementById("image-rotate").style.visibility = "hidden";
+  setTimeout(function(){document.getElementById("rotation").disabled = false;},500);
+  setTimeout(function(){document.getElementById("image-rotate").style.visibility = "visible";},500);
   //For upper linear motion
   var trackUP=0
   var upperFiveElements= getUpperPossition();//get idex of elements
@@ -521,6 +525,37 @@ function reset()
 function tButton()
 {
   upperFiveElements=getUpperPossition();
+  document.getElementById("t-button").disabled = true;
+  setTimeout(function(){document.getElementById("t-button").disabled = false;},500);
+
+ //Hidding and showing the T feature images
+  var img_non_T_first = document.getElementById('image-non-T-first');
+  var img_non_T_second = document.getElementById('image-non-T-second');
+  var image_T_up = document.getElementById('image-T-up');
+  var image_T_down=document.getElementById('image-T-down');
+  if(img_non_T_first.style.visibility=='hidden' && image_T_up.style.visibility=='hidden')
+  { 
+    img_non_T_first.style.visibility = 'visible';
+    image_T_up.style.visibility = 'visible';
+  }
+  else
+  {
+    img_non_T_first.style.visibility = 'hidden';
+    image_T_up.style.visibility = 'hidden';
+  }
+
+  if(img_non_T_second.style.visibility=='visible' && image_T_down.style.visibility=='visible')
+  { 
+    img_non_T_second.style.visibility = 'hidden';
+    image_T_down.style.visibility = 'hidden';
+  }
+  else
+  {
+    img_non_T_second.style.visibility = 'visible';
+    image_T_down.style.visibility = 'visible';
+  }
+
+
   //We need to work with 4 positions only so we will focus on last 4 elements
   //Get elements starting from index 1
   elem1= document.getElementById("main-object-"+(upperFiveElements[1]+1).toString());
@@ -552,12 +587,16 @@ function tButton()
 
 function mix()
 {
+  document.getElementById("mix").disabled = true;
+  setTimeout(function(){document.getElementById("mix").disabled = false;},500);
 
 }
 
 function swap13()
 {
   var upperFiveElements=getUpperPossition();
+  document.getElementById("one-three").disabled = true;
+  setTimeout(function(){document.getElementById("one-three").disabled = false;},500);
   //We need to work with 2 positions only so we will focus on last only position 1 and position 3
   //Get elements starting from index 1
   elem1= document.getElementById("main-object-"+(upperFiveElements[1]+1).toString());
@@ -580,6 +619,8 @@ function swap174()
 {
   var upperFiveElements=getUpperPossition();
   var rightFiveElement=getRightPositions();
+  document.getElementById("one-seven-four").disabled = true;
+  setTimeout(function(){document.getElementById("one-seven-four").disabled = false;},500);
   // We get total 10 positions but we need to work with position at 1, 4 and 7
   elem1= document.getElementById("main-object-"+(upperFiveElements[1]+1).toString());
   elem4= document.getElementById("main-object-"+(upperFiveElements[4]+1).toString());
@@ -601,6 +642,9 @@ function swap174()
   changedPosition[rightFiveElement[2]][0]= initialPosition[3][0];
   changedPosition[rightFiveElement[2]][1]= initialPosition[3][1];
 
+}
 
+function rotationInverse()
+{
   
 }
